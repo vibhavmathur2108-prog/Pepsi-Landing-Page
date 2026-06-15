@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Soda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://googleapis.com">
+
+    <style>
+html {
+  scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#000000;
+}
+
+
+
+#header1{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    padding:15px;
+    background:#000000;
+}
+
+#header{
+    display:flex;
+    align-items:center;
+    background:#000;
+    border-radius:10px;
+    min-height:100px;
+}
+
+#left_container{
+    padding:10px 30px;
+    background:#000;
+}
+
+#header_logo{
+    width:90px;
+    height:90px;
+}
+
+#header_hr{
+    background-color: #ffffff;
+    width: 100vw;
+    height: 5px;
+}
+
+
+
+#nav_menu{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    background:#000;
+}
+
+#nav_menu a{
+    text-decoration:none;
+    color:white;
+    font-family:"Paytone One", sans-serif;
+    font-size:1.8rem;
+    transition:0.5s;
+}
+
+#nav_menu a:hover{
+    color:#0095ff;
+    text-decoration: underline;
+}
+
+.banner_slider{
+    height:100vh;
+    width:100%;
+    background-image: url("pepsi_challenge_header_desktop_3.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    
+}
+
+.about{
+    background:#000;
+    padding:80px 60px;
+}
+
+#heading_about{
+    text-align:center;
+    color:white;
+    font-family:"Paytone One", sans-serif;
+    letter-spacing:8px;
+    font-size:4rem;
+    margin-bottom:40px;
+}
+
+#city_list{
+    width:100%;
+    padding:40px 80px 100px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    background:#000;
+}
+
+.city_column{
+    padding:0 40px;
+    border-right:2px solid #ffffff;
+}
+
+.city_column:last-child{
+    border-right:none;
+}
+
+.city_column p{
+    color:#fff;
+    font-family:"Paytone One", sans-serif;
+    font-size:2rem;
+    margin-bottom:35px;
+    letter-spacing:1px;
+}
+
+/* Tablet */
+@media(max-width:1024px){
+
+    #city_list{
+        grid-template-columns:repeat(2,1fr);
+        gap:40px;
+    }
+
+    .city_column:nth-child(2){
+        border-right:none;
+    }
+
+    .city_column p{
+        font-size:1.5rem;
+    }
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    #heading_about{
+        font-size:2.5rem;
+        letter-spacing:3px;
+    }
+
+    #city_list{
+        grid-template-columns:1fr;
+        padding:20px 30px 60px;
+    }
+
+    .city_column{
+        border-right:none;
+        border-bottom:2px solid rgba(255,255,255,0.4);
+        padding:20px 0;
+        text-align:center;
+    }
+
+    .city_column:last-child{
+        border-bottom:none;
+    }
+
+    .city_column p{
+        font-size:1.2rem;
+        margin-bottom:20px;
+    }
+}
+
+#line_below_form{
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+
+#footer1{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+        
+    </style>
+</head>
+<body>
+    <div id="header1">
+    <header id="header">
+
+        <div id="left_container">
+            <a href="Pepsi_Responsive_Version.html#">
+                <img src="logo.png" alt="Pepsi Logo" id="header_logo" href="#">
+            </a>
+            
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+
+        <div id="nav_menu">
+            <a href="Pepsi_Responsive_Version.html#">Home</a>
+            <a href="Pepsi_Responsive_Version.html#about">About Us</a>
+            <a href="Pepsi_Responsive_Version.html#products">Products</a>
+            <a href="Pepsi_Responsive_Version.html#contact">Contact Us</a>
+            <a href="soda.html">The Pepsi Challenge</a>
+            
+        </div>
+
+        
+
+    </header>
+    
+</div>
+
+<div>
+    <section class="banner_slider"></section>
+    
+</div>
+
+<section class="about" id="about">
+
+    <h1 id="heading_about">JOIN THE PEPSI CHALLENGE</h1>
+
+</section>
+
+<div id="city_list">
+
+    <div class="city_column">
+        <p>DELHI</p>
+        <p>MUMBAI</p>
+        <p>PUNE</p>
+        <p>HYDERABAD</p>
+        <p>PRAYAGRAJ</p>
+        <p>GHAZIABAD</p>
+    </div>
+
+    <div class="city_column">
+        <p>BHOPAL</p>
+        <p>SHIMLA</p>
+        <p>CHANDIGARH</p>
+        <p>AMBALA</p>
+        <p>CHENNAI</p>
+        <p>BANGALORE</p>
+    </div>
+
+    <div class="city_column">
+        <p>INDORE</p>
+        <p>AMRITSAR</p>
+        <p>JAMMU</p>
+        <p>SRINAGAR</p>
+        <p>LEH</p>
+        <p>VISHAKAPATNAM</p>
+    </div>
+
+    <div class="city_column">
+        <p>TRIVANDRUM</p>
+        <p>GUWHATI</p>
+        <p>KOTA</p>
+        <p>KOLKATA</p>
+        <p>DEHRADUN</p>
+        <p>PATNA</p>
+    </div>
+
+</div>
+
+
+
+<hr id="line_below_form">
+<div id="footer1">
+    <div id="footer">
+        <p>2026 PepsiCo, Inc</p>
+    </div>
+</div>
+</div>
+
+<hr id="line_below_form">
+</body>
+</html>
